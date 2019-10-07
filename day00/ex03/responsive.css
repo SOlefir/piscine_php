@@ -1,0 +1,50 @@
+h1
+{
+	font-family: "Helvetica";
+	font-size: 500%;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.element
+{
+	border: 2px;
+	width: 5vw;
+	height: 5vw;
+}
+.empty_box
+{
+	border: 2px;
+	width: 5vw;
+	height: 5vw;	
+}
+.name
+{
+	font-size: 1.5vw;
+	margin-top: 0%;
+	margin-left: 37%;  
+    font-family: Helvetica;
+}
+.massa
+{
+	font-size: 0.7vw;
+	margin-left: 75%;
+	padding-top: 5%;
+	font-family: Helvetica;
+}
+.nbr
+{
+	font-size: 0.6vw;
+	margin-right: 80%;
+	margin-top: -10%;
+    font-family: Helvetica;
+}
+body 
+{
+	
+	background: 
+	url(https://st4.depositphotos.com/1020857/27144/v/450/depositphotos_271449524-stock-illustration-chemist-dmitri-mendeleev.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,964 @@
+<!--
+                                                          :::      ::::::::
+     mendeleiev.html                                    :+:      :+:    :+:
+                                                      +:+ +:+         +:+
+     By: solefir <solefir@student.42.fr>            +#+  +:+       +#+
+                                                  +#+#+#+#+#+   +#+
+     Created: 2019/09/30 18:34:55 by solefir           #+#    #+#
+     Updated: 2019/10/01 23:06:52 by solefir          ###   ########.fr
+-->
+
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>mendeleiev</title>
+		<style>
+			h1
+			{
+				font-family: "Helvetica";
+				font-size: 500%;
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+			.element
+			{
+				border: 2px;
+				width: 80px;
+				height: 80px;
+			}
+			.empty_box
+			{
+				border: 2px;
+				width: 80px;
+				height: 80px;	
+			}
+			.name
+			{
+				margin-top: 0px;
+            	text-align: center;
+            	font-family: Helvetica;
+			}
+			.massa
+			{
+            	text-align: right;
+            	margin-right: 4px;
+            	padding-top: -5px;
+            	font-family: Helvetica;
+            	font-size: 12px;
+			}
+			.nbr
+			{
+				margin-left: 3px;
+				margin-top: -13px;
+            	text-align: left;
+            	font-family: Helvetica;
+            	font-size: 15px;
+			}
+			body 
+			{
+				background: 
+				url(https://st4.depositphotos.com/1020857/27144/v/450/depositphotos_271449524-stock-illustration-chemist-dmitri-mendeleev.jpg);
+				background-position: center center;
+				background-attachment: fixed;
+				background-size: cover;
+				background-color: #464646;
+				background-repeat: no-repeat;
+			}
+			/*div:hover {
+				background-color: rgba(128, 128, 128, 0.5) !important;
+			}*/
+		</style>
+	</head>
+<body>
+	<h1 align="center">Periodic table of the elements</h1>
+	<table  align="center">
+	
+		<!-- 	____________________________1 row____________________________   -->
+	
+		<tr>
+		 <td>
+			<div class="element" style="background: #B0C4DE; border: #4682B4;">
+				<p class="massa">1</p>
+				<h2 class="name" > H </h2>
+				<p class="nbr">1</p>
+			</div>
+		 </td>
+		 <td colspan="16" class="empty_box"></td>
+		 <td>
+			<div class="element" style="background: #D8BFD8; border: #DDA0DD;">
+				<p class="massa">4</p>
+				<h2 class="name" > He </h2>
+				<p class="nbr" align="left">2</p>
+			</div>
+		 </td>
+
+		<!-- 	____________________________2 row____________________________   -->
+		
+		<tr>
+		 <td>
+			<div class="element" style="background: #FFA07A; ">
+				<p class="massa">7</p>
+				<h2 class="name" > Li </h2>
+				<p class="nbr">3</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F4A460; ">
+				<p class="massa">9</p>
+				<h2 class="name" > Be </h2>
+				<p class="nbr">4</p>
+			</div>
+		 </td>
+		 <td colspan="10" class="empty_box"></td>
+		 <td>
+			<div class="element" style="background: #ADD8E6; ">
+				<p class="massa">10</p>
+				<h2 class="name" > B </h2>
+				<p class="nbr">5</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #B0C4DE; ">
+				<p class="massa">12</p>
+				<h2 class="name" > C </h2>
+				<p class="nbr">6</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #B0C4DE; ">
+				<p class="massa">14</p>
+				<h2 class="name" > N </h2>
+				<p class="nbr">7</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #B0C4DE; ">
+				<p class="massa">16</p>
+				<h2 class="name" > O </h2>
+				<p class="nbr">8</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DDA0DD; ">
+				<p class="massa">19</p>
+				<h2 class="name" > F </h2>
+				<p class="nbr">9</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #D8BFD8; ">
+				<p class="massa">20</p>
+				<h2 class="name" > Ne </h2>
+				<p class="nbr">10</p>
+			</div>
+		 </td>
+		</tr>
+		
+		<!-- 	____________________________3 row____________________________   -->
+		
+		<tr>
+		 <td>
+			<div class="element" style="background: #FFA07A; ">
+				<p class="massa">7</p>
+				<h2 class="name" > Na </h2>
+				<p class="nbr">11</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F4A460; ">
+				<p class="massa">24</p>
+				<h2 class="name" > Mg </h2>
+				<p class="nbr">12</p>
+			</div>
+		 </td>
+		 <td colspan="10" class="empty_box"></td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">27</p>
+				<h2 class="name" > Al </h2>
+				<p class="nbr">13</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #ADD8E6; ">
+				<p class="massa">28</p>
+				<h2 class="name" > Si </h2>
+				<p class="nbr">14</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #B0C4DE; ">
+				<p class="massa">31</p>
+				<h2 class="name" > P </h2>
+				<p class="nbr">15</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #B0C4DE; ">
+				<p class="massa">32</p>
+				<h2 class="name" > S </h2>
+				<p class="nbr">16</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DDA0DD; ">
+				<p class="massa">35</p>
+				<h2 class="name" > Cl </h2>
+				<p class="nbr">17</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #D8BFD8; ">
+				<p class="massa">40</p>
+				<h2 class="name" > Ar </h2>
+				<p class="nbr">18</p>
+			</div>
+		 </td>
+		</tr>
+		
+		<!-- 	____________________________4 row____________________________   -->
+		
+		<tr>
+		 <td>
+			<div class="element" style="background: #FFA07A; ">
+				<p class="massa">40</p>
+				<h2 class="name" > K </h2>
+				<p class="nbr">19</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F4A460; ">
+				<p class="massa">40</p>
+				<h2 class="name" > Ca </h2>
+				<p class="nbr">20</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">45</p>
+				<h2 class="name" > Sc </h2>
+				<p class="nbr">21</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">48</p>
+				<h2 class="name" > Ti </h2>
+				<p class="nbr">22</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">51</p>
+				<h2 class="name" > V </h2>
+				<p class="nbr">23</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">52</p>
+				<h2 class="name" > Cr </h2>
+				<p class="nbr">24</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">55</p>
+				<h2 class="name" > Mn </h2>
+				<p class="nbr">25</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">56</p>
+				<h2 class="name" > Fe </h2>
+				<p class="nbr">26</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">59</p>
+				<h2 class="name" > Co </h2>
+				<p class="nbr">27</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">59</p>
+				<h2 class="name" > Ni </h2>
+				<p class="nbr">27</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">63</p>
+				<h2 class="name" > Cu </h2>
+				<p class="nbr">28</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">65</p>
+				<h2 class="name" > Zn </h2>
+				<p class="nbr">30</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">70</p>
+				<h2 class="name" > Ga </h2>
+				<p class="nbr">31</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #ADD8E6; ">
+				<p class="massa">73</p>
+				<h2 class="name" > Ge </h2>
+				<p class="nbr">32</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #ADD8E6; ">
+				<p class="massa">75</p>
+				<h2 class="name" > As </h2>
+				<p class="nbr">33</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #B0C4DE; ">
+				<p class="massa">79</p>
+				<h2 class="name" > Se </h2>
+				<p class="nbr">1</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DDA0DD; ">
+				<p class="massa">80</p>
+				<h2 class="name" > Br </h2>
+				<p class="nbr">35</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #D8BFD8; ">
+				<p class="massa">85</p>
+				<h2 class="name" > Kr </h2>
+				<p class="nbr">36</p>
+			</div>
+		 </td>
+		</tr>
+		
+		<!-- 	____________________________5 row____________________________   -->
+		
+		<tr>
+		 <td>
+			<div class="element" style="background: #FFA07A; ">
+				<p class="massa">85</p>
+				<h2 class="name" > Rb </h2>
+				<p class="nbr">37</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F4A460; ">
+				<p class="massa">87</p>
+				<h2 class="name" > Sr </h2>
+				<p class="nbr">38</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">89</p>
+				<h2 class="name" > Y </h2>
+				<p class="nbr">39</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">91</p>
+				<h2 class="name" > Zr </h2>
+				<p class="nbr">40</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">93</p>
+				<h2 class="name" > Nb </h2>
+				<p class="nbr">41</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">95</p>
+				<h2 class="name" > Mo </h2>
+				<p class="nbr">42</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">99</p>
+				<h2 class="name" > Tc </h2>
+				<p class="nbr">43</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">101</p>
+				<h2 class="name" > Ru </h2>
+				<p class="nbr">44</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">103</p>
+				<h2 class="name" > Rh </h2>
+				<p class="nbr">45</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">106</p>
+				<h2 class="name" > Pd </h2>
+				<p class="nbr">46</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">108</p>
+				<h2 class="name" > Ag </h2>
+				<p class="nbr">47</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">113</p>
+				<h2 class="name" > Cd </h2>
+				<p class="nbr">48</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">115</p>
+				<h2 class="name" > In </h2>
+				<p class="nbr">49</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">119</p>
+				<h2 class="name" > Sn </h2>
+				<p class="nbr">50</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #ADD8E6; ">
+				<p class="massa">122</p>
+				<h2 class="name" > Sb </h2>
+				<p class="nbr">51</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #ADD8E6; ">
+				<p class="massa">127</p>
+				<h2 class="name" > Te </h2>
+				<p class="nbr">52</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DDA0DD; ">
+				<p class="massa">127</p>
+				<h2 class="name" > I </h2>
+				<p class="nbr">53</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #D8BFD8; ">
+				<p class="massa">131</p>
+				<h2 class="name" > Xe </h2>
+				<p class="nbr">54</p>
+			</div>
+		 </td>
+		</tr>
+		
+		<!-- 	____________________________6 row____________________________   -->
+		
+		<tr>
+		 <td>
+			<div class="element" style="background: #FFA07A; ">
+				<p class="massa">132</p>
+                <h2  class="name">Cs</h2>
+                <p class="nbr">55</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F4A460; ">
+				<p class="massa">137</p>
+                <h2  class="name">Ba</h2>
+                <p class="nbr">56</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				<h2 class="name" > 57-71 </h2>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">178</p>
+                <h2  class="name">Hf</h2>
+                <p class="nbr">72</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">180</p>
+                <h2  class="name">Ta</h2>
+                <p class="nbr">73</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">183</p>
+                <h2  class="name">W</h2>
+                <p class="nbr">74</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">186</p>
+                <h2  class="name">Re</h2>
+                <p class="nbr">75</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">190</p>
+                <h2  class="name">Os</h2>
+                <p class="nbr">76</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">192</p>
+                <h2  class="name">Ir</h2>
+                <p class="nbr">77</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">195</p>
+                <h2  class="name">Pt</h2>
+                <p class="nbr">78</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">196</p>
+                <h2  class="name">Au</h2>
+                <p class="nbr">79</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				 <p class="massa">200</p>
+                <h2  class="name">Hg</h2>
+                <p class="nbr">80</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">204</p>
+                <h2  class="name">Tl</h2>
+                <p class="nbr">81</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">207</p>
+                <h2  class="name">Pb</h2>
+                <p class="nbr">82</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">208</p>
+                <h2  class="name">Bi</h2>
+                <p class="nbr">83</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #ADD8E6; ">
+				<p class="massa">209</p>
+                <h2  class="name">Po</h2>
+                <p class="nbr">84</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DDA0DD; ">
+				<p class="massa">210</p>
+				<h2 class="name" > At </h2>
+				<p class="nbr">1</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #D8BFD8; ">
+				 <p class="massa">222</p>
+                <h2  class="name">Rn</h2>
+                <p class="nbr">86</p>
+			</div>
+		 </td>
+		</tr>
+		
+		<!-- 	____________________________7 row____________________________   -->
+		
+		<tr>
+		 <td>
+			<div class="element" style="background: #FFA07A; ">
+				<p class="massa">223</p>
+                <h2  class="name">Fr</h2>
+                <p class="nbr">87</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F4A460; ">
+				<p class="massa">226</p>
+                <h2  class="name">Ra</h2>
+                <p class="nbr">88</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+                <h2  class="name">89-103</h2>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">261</p>
+                <h2  class="name">Rf</h2>
+                <p class="nbr">104</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">262</p>
+                <h2  class="name">Db</h2>
+                <p class="nbr">105</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">266</p>
+                <h2  class="name">Sg</h2>
+                <p class="nbr">106</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				 <p class="massa">264</p>
+                <h2  class="name">Bh</h2>
+                <p class="nbr">107</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">267</p>
+                <h2  class="name">Hs</h2>
+                <p class="nbr">108</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">268</p>
+                <h2  class="name">Mt</h2>
+                <p class="nbr">109</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">271</p>
+                <h2  class="name">Ds</h2>
+                <p class="nbr">110</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				 <p class="massa">272</p>
+                <h2  class="name">Rg</h2>
+                <p class="nbr">111</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #F0E68C; ">
+				<p class="massa">285</p>
+                <h2  class="name">Cn</h2>
+                <p class="nbr">112</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">284</p>
+                <h2  class="name">Uut</h2>
+                <p class="nbr">113</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">289</p>
+                <h2  class="name">Fl</h2>
+                <p class="nbr">114</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				<p class="massa">288</p>
+                <h2  class="name">Uup</h2>
+                <p class="nbr">115</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #8FBC8F; ">
+				 <p class="massa">292</p>
+                <h2  class="name">Lv</h2>
+                <p class="nbr">116</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DDA0DD; ">
+				<p class="massa">295</p>
+                <h2  class="name">Uus</h2>
+                <p class="nbr">117</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #D8BFD8; ">
+				<p class="massa">294</p>
+                <h2  class="name">Uuo</h2>
+                <p class="nbr">118</p>
+			</div>
+		 </td>
+		</tr>
+
+		<tr>
+			<td height="30"></td>
+		</tr>
+		
+		<!-- 	____________________________8 row____________________________   -->
+	 	
+	 	<td colspan="2" class="empty_box"></td>
+		<td>
+			<div class="element" style="background: #FFC0CB; ">
+				<p class="massa">138.90</p>
+                <h2  class="name">La</h2>
+                <p class="nbr">57</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				<p class="massa">140.11</p>
+                <h2  class="name">Ce</h2>
+                <p class="nbr">58</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				<p class="massa">144.24</p>
+                <h2  class="name">Pr</h2>
+                <p class="nbr">59</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				 <p class="massa">144.22</p>
+                <h2  class="name">Nd</h2>
+                <p class="nbr">60</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				 <p class="massa">145</p>
+                <h2  class="name">Pm</h2>
+                <p class="nbr">61</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				 <p class="massa">1150.36</p>
+                <h2  class="name">Sm</h2>
+                <p class="nbr">62</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				<p class="massa">151.96</p>
+                <h2  class="name">Eu</h2>
+                <p class="nbr">63</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				 <p class="massa">157</p>
+                <h2  class="name">Gd</h2>
+                <p class="nbr">64</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				<p class="massa">158</p>
+                <h2  class="name">Tb</h2>
+                <p class="nbr">65</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				<p class="massa">162.5</p>
+                <h2  class="name">Dy</h2>
+                <p class="nbr">66</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				 <p class="massa">164.93</p>
+                <h2  class="name">Ho</h2>
+                <p class="nbr">67</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				<p class="massa">167.2</p>
+                <h2  class="name">Er</h2>
+                <p class="nbr">68</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				<p class="massa">168.93</p>
+                <h2  class="name">Tm</h2>
+                <p class="nbr">69</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				<p class="massa">173.05</p>
+                <h2  class="name">Yb</h2>
+                <p class="nbr">70</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #FFC0CB; ">
+				 <p class="massa">174</p>
+                <h2  class="name">Lu</h2>
+                <p class="nbr">71</p>
+			</div>
+		 </td>
+
+		 <!-- 	____________________________9 row____________________________   -->
+		 
+		 <tr>
+		 <td colspan="2" class="empty_box"></td>
+		<td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">227</p>
+                <h2  class="name">Ac</h2>
+                <p class="nbr">89</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				 <p class="massa">232.03</p>
+                <h2  class="name">Th</h2>
+                <p class="nbr">90</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">231.035</p>
+                <h2  class="name">Pa</h2>
+                <p class="nbr">91</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">238.028</p>
+                <h2  class="name">U</h2>
+                <p class="nbr">92</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">237</p>
+                <h2  class="name">Np</h2>
+                <p class="nbr">93</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">244</p>
+                <h2  class="name">Pu</h2>
+                <p class="nbr">94</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">243</p>
+                <h2  class="name">Am</h2>
+                <p class="nbr">95</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				 <p class="massa">2474</p>
+                <h2  class="name">Cm</h2>
+                <p class="nbr">96</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">247</p>
+                <h2  class="name">Bk</h2>
+                <p class="nbr">97</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">251</p>
+                <h2  class="name">Cf</h2>
+                <p class="nbr">98</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">252</p>
+                <h2  class="name">Es</h2>
+                <p class="nbr">99</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">257</p>
+                <h2  class="name">Fm</h2>
+                <p class="nbr">100</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">258</p>
+                <h2  class="name">Md</h2>
+                <p class="nbr">101</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">261</p>
+                <h2  class="name">No</h2>
+                <p class="nbr">102</p>
+			</div>
+		 </td>
+		 <td>
+			<div class="element" style="background: #DB7093; ">
+				<p class="massa">264</p>
+                <h2  class="name">Lr</h2>
+                <p class="nbr">103</p>
+			</div>
+		 </td>
+		</tr>
+	</table>
+</body>
+</html>

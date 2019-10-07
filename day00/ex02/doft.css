@@ -1,0 +1,85 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   doft.css                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: solefir <solefir@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/10/01 13:54:15 by solefir           #+#    #+#             */
+/*   Updated: 2019/10/01 15:44:36 by solefir          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+body 
+{
+    background-color:	#505050;
+    margin:				19px;
+}
+
+.all_elem 
+{
+	width:	1420px;
+	margin:	0 auto;
+}
+}
+
+.header
+{
+	position:			relative;
+	width:				1420px;
+	height: 			125px;
+	border-radius:		9px;
+    background-color: 	#A9A9A9;
+}
+
+.Day
+{
+	height: 110px;
+	margin: 10px 10px;
+}
+
+.Loupe
+{
+	position: absolute;
+	right: 		30px;
+	top:		10px;
+}
+
+.photo
+{
+	margin: 			20px 0 0 30px;
+	width:				1020px;
+	height:				580px;
+	float:				left;
+    position:			relative;
+    border-radius:		5px;
+	background-color: 	#A9A9A9;
+}
+
+.cluster
+{
+	margin:	10px;
+    width:	1000px;
+    height:	560px;
+}
+
+.bar_right
+{
+	float: 		left;
+	width: 		123px;
+    height: 	426px;
+    background: #909090;
+    margin: 	20px 0 0 30px;
+    padding:	15px 0 0 32px;
+}
+
+.bar_left
+{
+	float: 		right;
+	width: 		123px;
+    height: 	426px;
+    background: #909090;
+    margin: 	20px 0 0 30px;
+    padding:	15px 0 0 32px;
+	
+}

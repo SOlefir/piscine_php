@@ -1,0 +1,16 @@
+<?php
+	function auth($login, $passwd){
+		if (!$login || !$passwd ){
+			return (false);
+		}
+		$passwd_login = unserialize(file_get_contents("../private/passwd"));
+		if ($passwd_login){
+			foreach ($passwd_login as $key => $value){
+				if ($value["login"] == $login && $value["passwd"] == hash("whirlpool", $passwd)){
+					return (true);
+				}
+			}
+		}
+		return (false);
+	}
+?>
