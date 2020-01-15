@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#balloon {background-color: red; 
+				border-radius: 50%;
+				height: 200px;
+				width: 200px;
+				}
+		</style>
+		<script>
+			var colorNum = 0;
+			var colors = new Array('red', 'green', 'blue');
+			function increaseBalloon()
+			{
+				var elem = document.getElementById("balloon");
+				elem.style.display = "hidden";
+				var width = elem.offsetWidth;
+				var height = elem.offsetHeight;
+				 if (width + 10 > 420)
+				 {
+				 	elem.style.width = 200 + "px";
+				 	elem.style.height = 200 + "px";
+				 }
+				else
+				{
+					elem.style.width = width + 10 + "px";
+					elem.style.height = height + 10 + "px";
+				}
+				if (colorNum == 2)
+					colorNum = 0;
+				else
+					colorNum += 1;
+				console.log(colorNum);
+				elem.style.backgroundColor = colors[colorNum];
+			}
+			function decreaseBalloon()
+			{
+				var elem = document.getElementById("balloon");
+				var width = elem.offsetWidth;
+				var height = elem.offsetHeight;
+				 if (width - 5 >= 200)
+				{
+					elem.style.width = width - 5 + "px";
+					elem.style.height = height - 5 + "px";
+				}
+				if (colorNum == 0)
+					colorNum = 2;
+				else
+					colorNum -= 1;
+				console.log(colorNum);
+				elem.style.backgroundColor = colors[colorNum];
+			}
+		</script>
+	</head>
+	<body>
+		<div name='balloon' id='balloon' onclick="increaseBalloon()" onmouseout="decreaseBalloon()">
+		</div>
+	</body>
+</html>

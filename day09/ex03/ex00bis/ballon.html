@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#balloon {background-color: red; 
+				border-radius: 50%;
+				height: 200px;
+				width: 200px;
+				}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  		<script>
+			$(document).ready(function(){
+				var colorNum = 0;
+				var colors = new Array('red', 'green', 'blue');
+			    
+			    $("#balloon").click(function(){
+			    	if (parseInt($(this).css("width")) + 10 > 420)
+			    	{
+			    		$(this).css("width", 200 + "px");
+			    		$(this).css("height", 200 + "px");
+			    	}
+			    	else
+			    	{
+			    		$(this).css("width", parseInt($(this).css("width")) + 10 + "px");
+			    		$(this).css("height", parseInt($(this).css("height")) + 10 + "px");
+			    	}
+					if (colorNum == 2)
+						colorNum = 0;
+					else
+						colorNum += 1;
+				    $(this).css("background-color", colors[colorNum]);
+			    });
+
+		    	$("#balloon").mouseleave(function(){
+		    	if (parseInt($(this).css("width")) - 5 >= 200)
+		    	{
+		    		$(this).css("width", parseInt($(this).css("width")) - 5 + "px");
+		    		$(this).css("height", parseInt($(this).css("height")) - 5 + "px");
+		    	}
+				if (colorNum == 0)
+					colorNum = 2;
+				else
+					colorNum -= 1;
+			    $(this).css("background-color", colors[colorNum]);
+			    });
+
+			});  			
+  		</script>
+
+	</head>
+	<body>
+		<div name='balloon' id='balloon'></div>
+	</body>
+</html>

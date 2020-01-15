@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		</style>
+		<script>
+			window.onload = function() {
+				document.getElementById("try_me").addEventListener("click", calc);
+			window.setInterval(function(){
+				alert("Please, use me...");
+				}, 30000);
+			};
+			function isNormalInteger(str) 
+			{
+			    if ( /^\s*[+-]?\d+\s*$/.test(str))
+			    	if (parseInt(str) >= 0)
+			    		return (1);
+			    return (0);
+			    // var n = Math.floor(Number(str));
+    			// return ( ("+" + String(n)) ===  str || String(n) ===  str ) && n >= 0;
+			}
+			function calc()
+			{
+				var num1;
+				var num2;
+				var oper;
+
+				num1 = document.getElementById("first").value;
+				num2 = document.getElementById("second").value;
+				oper = document.getElementById("oper").value;
+				if (!isNormalInteger(num1) || !isNormalInteger(num2))
+				{
+					alert("Error :(");
+					console.log("Error :(");
+					return;
+				}
+				if (parseInt(num2) == 0 && (oper == '/' || oper == '%'))
+				{
+					alert("It's over 9000!");
+					console.log("It's over 9000!");
+					return;
+				}
+				if (oper === '+')
+					result = parseInt(num1) + parseInt(num2);
+				else if (oper === '-')
+					result = parseInt(num1) - parseInt(num2);
+				else if (oper === '*')
+					result = parseInt(num1) * parseInt(num2);
+				else if (oper === '/')
+					result = parseInt(num1) / parseInt(num2);
+				else if (oper === '%')
+					result = parseInt(num1) % parseInt(num2);
+
+				alert(result);
+				console.log(result);
+			}
+		</script>
+	</head>
+
+	<body>
+	<input type='text' id='first'>
+	<select id='oper'>
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input type='text' id='second'>
+	<input id='try_me' type='submit' value="Try me!"></button>
+	</body>
+</html>
